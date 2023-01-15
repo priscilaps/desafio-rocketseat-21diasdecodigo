@@ -1,0 +1,55 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: 'Pacifico', cursive;
+  background: #232323;
+  overflow: hidden;
+}
+div{
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+h1{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 24rem;
+
+  width: 80%;
+  transform-origin: center center;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  animation: swing 1.5s alternate infinite ease-in-out;
+  transition: all 0.2s ease-in-out 0s;
+}
+.filter-shadow {
+  color: transparent;
+  background: linear-gradient(180deg, #7818A5, #440E5D);
+  -webkit-background-clip: text;
+          background-clip: text;
+  filter: drop-shadow(-1px -1px white) drop-shadow(1px 1px #7818A5) drop-shadow(1px 1px #6B1593) drop-shadow(1px 1px #5A127C) drop-shadow(1px 1px #4F106D) drop-shadow(1px 1px #440E5D) drop-shadow(1px 1px #390C4E) drop-shadow(1px 1px #330B46) drop-shadow(1px 1px #260834) drop-shadow(1px 1px #1D0628) drop-shadow(1px 1px #0E0313) drop-shadow(1px 1px #000) drop-shadow(12px 12px 30px rgba(0, 0, 0, 0.2)) drop-shadow(12px 12px 10px rgba(0, 0, 0, 0.2));
+}
+.glow{
+  z-index: -1;
+  text-shadow: 0 0 20px #23E4AF, 0 0 30px #23E4AF, 0 0 40px #23E4AF, 0 0 55px #23E4AF, 0 0 75px #23E4AF, 0px 0px 5px rgba(101,14,124,0);
+}
+
+@keyframes swing {
+    0% {
+      transform: skewX(-10deg) translate(-50%, -50%);
+    }
+    100% {
+      transform: skewX(10deg) translate(-50%, -50%); 
+    }
+  }
